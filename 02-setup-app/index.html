@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+    1. 使用 webpack 来对我们的项目 js 文件进行打包 
+      npx webpack 使用webpack默认的打包方式
+      npx webpack --stats detailed  显示打包细节
+    
+    2. 自定义 webpck 配置:
+      webpack --help
+      webpack --entry ./src/index.js --mode production
+        指定入口文件和打包的模式
+    
+    3. 通过 webpack-cli 命令行的方式来使用 webpack 并不方便,
+      使用配置文件的方式来执行 webpack 打包
+
+    4. 但是现在每次webpack打包后，输出的文件都需要我们手动添加script标签到html中,
+      是否可以自动将 script 标签添加到 html 中？
+   -->
+  <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

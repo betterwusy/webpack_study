@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+    使用 ECMAScript module 来定义和导出一个模块
+    注意点：
+      1. script type="module"
+        否则提示无法从 module 的外部使用 import
+      2. 该页面访问模块时存在跨域问题需解决
+    缺点: 这种方式浏览器的支持不完整
+   -->
+  <script type="module">
+    import add from './esm/add.js'
+    console.log(add(4, 5));
+  </script>
+
+</body>
+
+</html>

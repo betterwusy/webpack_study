@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'myfont';
+  src: url('./assets/webfont.ttf') format('truetype');
+}
+
+.icon {
+  font-family: 'myfont';
+  font-size: 30px;
+}
+
+.hello{
+  color: red;
+}
+
+.block-bg {
+  background-image: url(./assets/img-1.png) !important;
+}
+
